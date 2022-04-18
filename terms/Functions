@@ -1,0 +1,8 @@
+For the template,
+ I have used ruby erb,and sinatra.
+ I have not uses any gem since it is a 
+ basic demonstration and you had requested
+ not to do extreme engineering thus
+ though i had anticipated using TDD,
+ the simplicity used eliminated the need
+ for testing.

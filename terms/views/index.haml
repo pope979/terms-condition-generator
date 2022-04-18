@@ -1,0 +1,133 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    :css
+      form * {
+        display: block;
+        margin: 10px;
+      }
+    %script{:language => "Javascript"}
+      :cdata
+        function download(filename, text) {
+        var pom = document.createElement('a');
+        pom.setAttribute('href', 'data:text/plain;charset=utf-8,' +
+        
+        encodeURIComponent(text));
+        pom.setAttribute('download', filename);
+        
+        pom.style.display = 'none';
+        document.body.appendChild(pom);
+        
+        pom.click();
+        
+        document.body.removeChild(pom);
+        }
+  %body
+    %form{:onsubmit => "download(this['name'].value, this['text'].value)"}
+      %input{:name => "name", :type => "text", :value => "Terms_and_conditions.txt"}/
+      %textarea{:cols => "50", :name => "text", :rows => "3"}
+        :preserve
+          
+            Create your terms and condition here
+            Terms and Conditions
+            
+            Our Terms and Conditions were last updated on MM/DD/YYYY
+            
+            Please read these terms and conditions carefully before using Our Service
+          Interpretation and Definitions:
+          Interpretation......
+          
+          Create your detailed Interpretation:
+          Definitions.........
+          
+          Create your interpresentation and definitions
+          
+          For the purposes of these Terms and Conditions:
+          
+          Affiliate:....
+          
+          Account:......
+          
+          Company:....
+          
+          Country:....
+          
+          Content:.....
+          
+          Device:....
+          
+          Feedback:....
+          
+          Service:....
+          
+          Website/Business/App:....
+          
+          Third-party Social Media Service
+          
+          You
+          
+          Acknowledgment
+          
+          User Accounts
+          
+          Your Right to Post Content
+          
+          Content Restrictions
+          
+          Content Backups
+          
+          
+          Copyright Policy
+          
+          Intellectual Property Infringement
+          
+          DMCA Notice and DMCA Procedure for Copyright Infringement Claims
+          
+          
+          Intellectual Property
+          
+          Your Feedback to Us
+          
+          Links to Other Websites
+          
+          Termination
+          
+          You represent and warrant that: (i)  and (ii) ,(iii),etc
+          
+          Limitation of Liability
+          
+          AS IS" and "AS AVAILABLE" Disclaimer
+          
+          Governing Law
+          
+          
+          Disputes Resolution
+          
+          For European Union (EU) Users
+          
+          United States Legal Compliance
+          
+          Severability and Waiver:
+          Severability:....
+          
+          Waiver:...
+          
+          Translation Interpretation
+          
+          Changes to These Terms and Conditions
+          
+          Contact Us
+          
+          If you have any questions about these Terms and Conditions, You can contact us
+          
+          By visiting this page on our website: 
+          By sending us an email: [___WEBSITE_CONTACT_EMAIL___]
+          
+          
+            
+                  %br/
+      %br/
+      %input{:type => "submit", :value => "Download"}/
+      %input{: type=>"submit" onclick=>"addTexttxt();" value=>"Save As TXT">
+
